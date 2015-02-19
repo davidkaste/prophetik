@@ -1,2 +1,2 @@
 # prophetik
-Recommandation engine based on tripartite graphs and linked data.
+Recommendation engine based on tripartite graphs and linked data.
