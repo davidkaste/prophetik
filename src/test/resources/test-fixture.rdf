@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+        xmlns:schema="http://schema.org/"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+    <rdf:Description rdf:about="http://testdomain.com/movie/LadyInTheWater">
+        <rdf:type rdf:resource="http://schema.org/Product"/>
+        <rdfs:label>Lady in the Water</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/user/LisaRose">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Lisa Rose</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/516afe9597ab78e29304173126a759b5">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/516afe9597ab78e29304173126a759b5">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/516afe9597ab78e29304173126a759b5"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/LadyInTheWater"/>
+        <schema:author rdf:resource="http://testdomain.com/user/LisaRose"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/movie/SnakesOnAPlane">
+        <rdf:type rdf:resource="http://schema.org/Product"/>
+        <rdfs:label>Snakes on a Plane</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/df8a0998d8beb52bbee4cfb3a23923ea">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/df8a0998d8beb52bbee4cfb3a23923ea">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/df8a0998d8beb52bbee4cfb3a23923ea"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SnakesOnAPlane"/>
+        <schema:author rdf:resource="http://testdomain.com/user/LisaRose"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/movie/JustMyLuck">
+        <rdf:type rdf:resource="http://schema.org/Product"/>
+        <rdfs:label>Just My Luck</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/0d402952ef08e944cca9da7858deb611">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/0d402952ef08e944cca9da7858deb611">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/0d402952ef08e944cca9da7858deb611"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/JustMyLuck"/>
+        <schema:author rdf:resource="http://testdomain.com/user/LisaRose"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/movie/SupermanReturns">
+        <rdf:type rdf:resource="http://schema.org/Product"/>
+        <rdfs:label>Superman Returns</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/3047011aa80c811219cf9056e4200aa3">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/3047011aa80c811219cf9056e4200aa3">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/3047011aa80c811219cf9056e4200aa3"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SupermanReturns"/>
+        <schema:author rdf:resource="http://testdomain.com/user/LisaRose"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/movie/You,MeAndDupree">
+        <rdf:type rdf:resource="http://schema.org/Product"/>
+        <rdfs:label>You, Me and Dupree</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/ad932a113a966f6eb3e3f0363ec34e7d">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/ad932a113a966f6eb3e3f0363ec34e7d">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/ad932a113a966f6eb3e3f0363ec34e7d"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/You,MeAndDupree"/>
+        <schema:author rdf:resource="http://testdomain.com/user/LisaRose"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/movie/TheNightListener">
+        <rdf:type rdf:resource="http://schema.org/Product"/>
+        <rdfs:label>The Night Listener</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/4b3817f0c4e4da48aff950bda4cbc4bd">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/4b3817f0c4e4da48aff950bda4cbc4bd">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/4b3817f0c4e4da48aff950bda4cbc4bd"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/TheNightListener"/>
+        <schema:author rdf:resource="http://testdomain.com/user/LisaRose"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/user/GeneSeymour">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Gene Seymour</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/b18e84c87837b671553db0d93034f2a8">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/b18e84c87837b671553db0d93034f2a8">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/b18e84c87837b671553db0d93034f2a8"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/LadyInTheWater"/>
+        <schema:author rdf:resource="http://testdomain.com/user/GeneSeymour"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/1914f612f16d4e46d617fbbcc3416983">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/1914f612f16d4e46d617fbbcc3416983">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/1914f612f16d4e46d617fbbcc3416983"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SnakesOnAPlane"/>
+        <schema:author rdf:resource="http://testdomain.com/user/GeneSeymour"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/e30c02db5c93b2198b0e6cc2e834e9b2">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/e30c02db5c93b2198b0e6cc2e834e9b2">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/e30c02db5c93b2198b0e6cc2e834e9b2"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/JustMyLuck"/>
+        <schema:author rdf:resource="http://testdomain.com/user/GeneSeymour"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/7e1cf854569cf13d0b1d5ef571bb0311">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/7e1cf854569cf13d0b1d5ef571bb0311">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/7e1cf854569cf13d0b1d5ef571bb0311"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SupermanReturns"/>
+        <schema:author rdf:resource="http://testdomain.com/user/GeneSeymour"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/123e7223abfd7aa499e4a75293b2a8c3">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/123e7223abfd7aa499e4a75293b2a8c3">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/123e7223abfd7aa499e4a75293b2a8c3"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/You,MeAndDupree"/>
+        <schema:author rdf:resource="http://testdomain.com/user/GeneSeymour"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/e688b056b9a75cbb8044f59fee42069b">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/e688b056b9a75cbb8044f59fee42069b">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/e688b056b9a75cbb8044f59fee42069b"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/TheNightListener"/>
+        <schema:author rdf:resource="http://testdomain.com/user/GeneSeymour"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/user/MichaelPhillips">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Michael Phillips</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/9b6438f29596d7b5e34a55df3a7e2770">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/9b6438f29596d7b5e34a55df3a7e2770">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/9b6438f29596d7b5e34a55df3a7e2770"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/LadyInTheWater"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MichaelPhillips"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/82b8867d87d34f55b185a27e5a42c062">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/82b8867d87d34f55b185a27e5a42c062">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/82b8867d87d34f55b185a27e5a42c062"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SnakesOnAPlane"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MichaelPhillips"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/c3d65c97d80f39098e80dfe02a1452d0">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/c3d65c97d80f39098e80dfe02a1452d0">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/c3d65c97d80f39098e80dfe02a1452d0"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SupermanReturns"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MichaelPhillips"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/bdf4a491a744c86b7a49287954e72806">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/bdf4a491a744c86b7a49287954e72806">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/bdf4a491a744c86b7a49287954e72806"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/TheNightListener"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MichaelPhillips"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/user/ClaudiaPuig">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Claudia Puig</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/0b16f7fa1db7d4ba664a411f55687c6e">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/0b16f7fa1db7d4ba664a411f55687c6e">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/0b16f7fa1db7d4ba664a411f55687c6e"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SnakesOnAPlane"/>
+        <schema:author rdf:resource="http://testdomain.com/user/ClaudiaPuig"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/7f502677f2e6acd88e860505e0d7616c">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/7f502677f2e6acd88e860505e0d7616c">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/7f502677f2e6acd88e860505e0d7616c"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/JustMyLuck"/>
+        <schema:author rdf:resource="http://testdomain.com/user/ClaudiaPuig"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/299b14d1ec0a12c053c086368a5968c9">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/299b14d1ec0a12c053c086368a5968c9">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/299b14d1ec0a12c053c086368a5968c9"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SupermanReturns"/>
+        <schema:author rdf:resource="http://testdomain.com/user/ClaudiaPuig"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/20d5d53e893a95ee7a01838a5fbb3654">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/20d5d53e893a95ee7a01838a5fbb3654">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/20d5d53e893a95ee7a01838a5fbb3654"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/You,MeAndDupree"/>
+        <schema:author rdf:resource="http://testdomain.com/user/ClaudiaPuig"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/96da9f4d0f32149195f3dac83f1e0ba5">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/96da9f4d0f32149195f3dac83f1e0ba5">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/96da9f4d0f32149195f3dac83f1e0ba5"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/TheNightListener"/>
+        <schema:author rdf:resource="http://testdomain.com/user/ClaudiaPuig"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/user/MickLaSalle">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Mick LaSalle</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/b8d0a2385b43d4d00b83bbac7a7430cc">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/b8d0a2385b43d4d00b83bbac7a7430cc">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/b8d0a2385b43d4d00b83bbac7a7430cc"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/LadyInTheWater"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MickLaSalle"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/01e525f090d3cff982092b7a32d53f69">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/01e525f090d3cff982092b7a32d53f69">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/01e525f090d3cff982092b7a32d53f69"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SnakesOnAPlane"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MickLaSalle"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/5ec6845e25afddee96f9bbd8e1c9079a">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/5ec6845e25afddee96f9bbd8e1c9079a">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/5ec6845e25afddee96f9bbd8e1c9079a"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/JustMyLuck"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MickLaSalle"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/e140aea3d0cb8f18c9ba52e67b002ca0">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/e140aea3d0cb8f18c9ba52e67b002ca0">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/e140aea3d0cb8f18c9ba52e67b002ca0"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SupermanReturns"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MickLaSalle"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/79b25581311c08c2932dc26a509a0925">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/79b25581311c08c2932dc26a509a0925">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/79b25581311c08c2932dc26a509a0925"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/You,MeAndDupree"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MickLaSalle"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/ce4e2b5bdb3de1d58fe1dbf6bfa3def4">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/ce4e2b5bdb3de1d58fe1dbf6bfa3def4">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/ce4e2b5bdb3de1d58fe1dbf6bfa3def4"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/TheNightListener"/>
+        <schema:author rdf:resource="http://testdomain.com/user/MickLaSalle"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/user/JackMatthews">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Jack Matthews</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/ace4268bde5c8731a7512337774f931c">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/ace4268bde5c8731a7512337774f931c">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/ace4268bde5c8731a7512337774f931c"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/LadyInTheWater"/>
+        <schema:author rdf:resource="http://testdomain.com/user/JackMatthews"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/2f836fc967fdebab71e0a8456be2bcd8">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/2f836fc967fdebab71e0a8456be2bcd8">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/2f836fc967fdebab71e0a8456be2bcd8"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SnakesOnAPlane"/>
+        <schema:author rdf:resource="http://testdomain.com/user/JackMatthews"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/97d2507b870867b779ecdef8db379f6d">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/97d2507b870867b779ecdef8db379f6d">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/97d2507b870867b779ecdef8db379f6d"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SupermanReturns"/>
+        <schema:author rdf:resource="http://testdomain.com/user/JackMatthews"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/4f8a4c1fa5abd010db278b385fd28eb3">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/4f8a4c1fa5abd010db278b385fd28eb3">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/4f8a4c1fa5abd010db278b385fd28eb3"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/You,MeAndDupree"/>
+        <schema:author rdf:resource="http://testdomain.com/user/JackMatthews"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/cfa2a7ccf490e00bcb78a3a3493c8c98">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/cfa2a7ccf490e00bcb78a3a3493c8c98">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/cfa2a7ccf490e00bcb78a3a3493c8c98"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/TheNightListener"/>
+        <schema:author rdf:resource="http://testdomain.com/user/JackMatthews"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/user/Toby">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Toby</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/f8d8a35f576a9dd2e8383ecbb6b520e4">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/f8d8a35f576a9dd2e8383ecbb6b520e4">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/f8d8a35f576a9dd2e8383ecbb6b520e4"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SnakesOnAPlane"/>
+        <schema:author rdf:resource="http://testdomain.com/user/Toby"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/3a76978ff8c3baaf1d9ff81fede08d8c">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/3a76978ff8c3baaf1d9ff81fede08d8c">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/3a76978ff8c3baaf1d9ff81fede08d8c"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/SupermanReturns"/>
+        <schema:author rdf:resource="http://testdomain.com/user/Toby"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/d63fab1cc26e516fa5fb28939898ee50">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/d63fab1cc26e516fa5fb28939898ee50">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/d63fab1cc26e516fa5fb28939898ee50"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/You,MeAndDupree"/>
+        <schema:author rdf:resource="http://testdomain.com/user/Toby"/>
+    </rdf:Description>
+
+</rdf:RDF>
