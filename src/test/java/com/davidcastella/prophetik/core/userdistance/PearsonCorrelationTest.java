@@ -1,5 +1,7 @@
-package com.davidcastella.prophetik.core;
+package com.davidcastella.prophetik.core.userdistance;
 
+import com.davidcastella.prophetik.core.userdistance.PearsonCorrelation;
+import com.davidcastella.prophetik.core.userdistance.UserDistance;
 import com.hp.hpl.jena.rdf.model.Model;
 import org.junit.Before;
 import org.junit.Test;

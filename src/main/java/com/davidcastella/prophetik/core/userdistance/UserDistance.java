@@ -1,4 +1,4 @@
-package com.davidcastella.prophetik.core;
+package com.davidcastella.prophetik.core.userdistance;
 
 import com.hp.hpl.jena.rdf.model.Model;
 
