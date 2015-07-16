@@ -53,7 +53,7 @@
 
     <rdf:Description rdf:about="http://testdomain.com/rating/0d402952ef08e944cca9da7858deb611">
         <rdf:type rdf:resource="http://schema.org/Rating"/>
-        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</schema:ratingValue>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</schema:ratingValue>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://testdomain.com/review/0d402952ef08e944cca9da7858deb611">
@@ -70,7 +70,7 @@
 
     <rdf:Description rdf:about="http://testdomain.com/rating/3047011aa80c811219cf9056e4200aa3">
         <rdf:type rdf:resource="http://schema.org/Rating"/>
-        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</schema:ratingValue>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</schema:ratingValue>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://testdomain.com/review/3047011aa80c811219cf9056e4200aa3">
