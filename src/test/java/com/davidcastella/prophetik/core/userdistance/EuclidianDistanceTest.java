@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
+import java.text.DecimalFormat;
 
 import static org.junit.Assert.*;
 
@@ -36,8 +37,9 @@ public class EuclidianDistanceTest {
     public void testGetUserDistance() throws Exception {
         String lisa = "http://testdomain.com/user/LisaRose";
         String gene = "http://testdomain.com/user/GeneSeymour";
-        Double expected = 1.148148148148;
+        DecimalFormat df = new DecimalFormat("###0.0000");
+        Double expected = 0.148148148148;
         Double result = euclidian.getUserDistance(graphTest, lisa, gene);
-        assertEquals(expected, result);
+        assertEquals(df.format(expected), df.format(result));
     }
 }
