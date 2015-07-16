@@ -1,6 +1,5 @@
 package com.davidcastella.prophetik;
 
-import com.hp.hpl.jena.graph.Graph;
 import com.hp.hpl.jena.rdf.model.Model;
 
 /**
