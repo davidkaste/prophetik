@@ -1,24 +1,32 @@
 package com.davidcastella.prophetik.core.userdistance;
 
-import com.davidcastella.prophetik.core.userdistance.PearsonCorrelation;
-import com.davidcastella.prophetik.core.userdistance.UserDistance;
+import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+
+import static org.junit.Assert.assertEquals;
 
 /**
- * Created by david_000 on 10/06/2015.
+ * Created by davidkaste on 10/06/2015.
  */
 public class PearsonCorrelationTest {
-
     private Model graphTest;
     private UserDistance pearson;
 
     @Before
     public void setUp() throws Exception {
+        OntModel auxGraph = ModelFactory.createOntologyModel();
         pearson = new PearsonCorrelation();
+        graphTest = auxGraph.read(new InputStreamReader(
+                        new FileInputStream(getClass().getClassLoader().getResource("test-fixture.rdf").getPath())),
+                "RDF/XML-ABBREV");
+        graphTest.setNsPrefix("dc", "http://purl.org/dc/elements/1.1/");
+        graphTest.setNsPrefix("schema", "http://schema.org/");
     }
 
     @Test

@@ -2,9 +2,14 @@ package com.davidcastella.prophetik.core.userdistance;
 
 import com.davidcastella.prophetik.core.userdistance.EuclidianDistance;
 import com.davidcastella.prophetik.core.userdistance.UserDistance;
+import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 
 import static org.junit.Assert.*;
 
@@ -18,7 +23,13 @@ public class EuclidianDistanceTest {
 
     @Before
     public void setUp() throws Exception {
+        OntModel auxGraph = ModelFactory.createOntologyModel();
         euclidian = new EuclidianDistance();
+        graphTest = auxGraph.read(new InputStreamReader(
+                        new FileInputStream(getClass().getClassLoader().getResource("test-fixture.rdf").getPath())),
+                "RDF/XML-ABBREV");
+        graphTest.setNsPrefix("dc", "http://purl.org/dc/elements/1.1/");
+        graphTest.setNsPrefix("schema", "http://schema.org/");
     }
 
     @Test
