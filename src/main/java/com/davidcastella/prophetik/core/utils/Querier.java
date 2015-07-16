@@ -19,9 +19,10 @@ public class Querier {
 
     private static final Logger log = Logger.getLogger(Querier.class.getName());
 
-    private static String getSPARQL(String filename) {
+    private static String getSPARQL(String filename, String userResource) {
         InputStream file = ClassLoader.getSystemResourceAsStream(filename);
-        return new Scanner(file).useDelimiter("\\A").next();
+        String returnStr = new Scanner(file).useDelimiter("\\A").next();
+        return returnStr.replaceAll("userResource", "<" + userResource + ">");
     }
 
     public static Map<String, Double> getUserProducts(Model graph, String userResource) {
@@ -29,7 +30,7 @@ public class Querier {
         Double value;
         Map<String, Double> result = new HashMap<String, Double>();
         Resource user = graph.getResource(userResource);
-        Query q = QueryFactory.create(getSPARQL("getUserProducts.sparql"));
+        Query q = QueryFactory.create(getSPARQL("getUserProducts.sparql", userResource));
         log.info("Setted query: " + q.toString());
         QueryExecution qe = QueryExecutionFactory.create(q, graph);
         ResultSet rs = qe.execSelect();
