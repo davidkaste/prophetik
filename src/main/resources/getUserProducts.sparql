@@ -1,7 +1,7 @@
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix schema: <http://schema.org/>
 select ?product ?ratingValue where {
-    ?review schema:author <http://testdomain.com/user/LisaRose>.
+    ?review schema:author userResource.
     ?review schema:itemReviewed ?product.
     ?review schema:reviewRating ?rating.
     ?rating schema:ratingValue ?ratingValue
