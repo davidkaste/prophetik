@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
+import java.text.DecimalFormat;
 
 import static org.junit.Assert.assertEquals;
 
@@ -33,8 +34,9 @@ public class PearsonCorrelationTest {
     public void testGetUserDistance() throws Exception {
         String lisa = "http://testdomain.com/user/LisaRose";
         String gene = "http://testdomain.com/user/GeneSeymour";
+        DecimalFormat df = new DecimalFormat("###0.0000");
         Double expected = 0.396059017191;
         Double result = pearson.getUserDistance(graphTest, lisa, gene);
-        assertEquals(expected, result);
+        assertEquals(df.format(expected), df.format(result));
     }
 }
