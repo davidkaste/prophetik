@@ -7,5 +7,4 @@ import java.util.Map;
  */
 public interface TopMatcher {
     public Map<String, Double> getTopMatches();
-    public Map<String, Double> getTopMatches(int numberResults);
 }
