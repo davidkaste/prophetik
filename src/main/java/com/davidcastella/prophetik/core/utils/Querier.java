@@ -7,9 +7,7 @@ import com.hp.hpl.jena.rdf.model.impl.SelectorImpl;
 import org.apache.log4j.lf5.LogLevel;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import java.util.logging.Logger;
 
 /**
@@ -19,18 +17,12 @@ public class Querier {
 
     private static final Logger log = Logger.getLogger(Querier.class.getName());
 
-    private static String getSPARQL(String filename, String userResource) {
-        InputStream file = ClassLoader.getSystemResourceAsStream(filename);
-        String returnStr = new Scanner(file).useDelimiter("\\A").next();
-        return returnStr.replaceAll("userResource", "<" + userResource + ">");
-    }
-
-    public static Map<String, Double> getUserProducts(Model graph, String userResource) {
+    public static Map<String, Double> getUserProductsRatings(Model graph, String userResource) {
         String key;
         Double value;
         Map<String, Double> result = new HashMap<String, Double>();
         Resource user = graph.getResource(userResource);
-        Query q = QueryFactory.create(getSPARQL("getUserProducts.sparql", userResource));
+        Query q = QueryFactory.create(Queries.getUserProductsRating(userResource));
         log.info("Setted query: " + q.toString());
         QueryExecution qe = QueryExecutionFactory.create(q, graph);
         ResultSet rs = qe.execSelect();
@@ -42,6 +34,21 @@ public class Querier {
             result.put(key, value);
         }
 
+        return result;
+    }
+
+    public static List<String> getAllUsers(Model graph, String userResource) {
+        List<String> result = new ArrayList<String>();
+        Query q = QueryFactory.create(Queries.getAllUsers(userResource));
+        QueryExecution qe = QueryExecutionFactory.create(q, graph);
+        ResultSet rs = qe.execSelect();
+        QuerySolution qs;
+        String user;
+        while(rs.hasNext()) {
+            qs = rs.next();
+            user = qs.getResource("user").toString();
+            result.add(user);
+        }
         return result;
     }
 }
