@@ -12,8 +12,8 @@ import java.util.Map;
 public class PearsonCorrelation implements UserDistance {
     public double getUserDistance(Model graph, String user1Uri, String user2Uri) {
         Map<String, Integer> si = new HashMap<String, Integer>();
-        Map<String, Double> prefs1 = Querier.getUserProducts(graph, user1Uri);
-        Map<String, Double> prefs2 = Querier.getUserProducts(graph, user2Uri);
+        Map<String, Double> prefs1 = Querier.getUserProductsRatings(graph, user1Uri);
+        Map<String, Double> prefs2 = Querier.getUserProductsRatings(graph, user2Uri);
 
         Double sumSq1 = 0.0, sumSq2 = 0.0;
         Double sum1 = 0.0, sum2 = 0.0;
