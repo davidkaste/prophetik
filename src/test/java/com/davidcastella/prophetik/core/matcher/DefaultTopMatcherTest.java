@@ -28,7 +28,7 @@ public class DefaultTopMatcherTest {
         graphTest = auxGraph.read(new InputStreamReader(
                         new FileInputStream(getClass().getClassLoader().getResource("test-fixture.rdf").getPath())),
                 "RDF/XML-ABBREV");
-        m = new DefaultTopMatcher(graphTest, "http://www.testdomain.com/Toby", 3);
+        m = new DefaultTopMatcher(graphTest, "http://testdomain.com/user/Toby", 3);
     }
 
     @After
@@ -38,15 +38,15 @@ public class DefaultTopMatcherTest {
     @Test
     public void testGetTopMatches() throws Exception {
         Map<String, Double> result = m.getTopMatches();
-        result = Querier.getUserProducts(graphTest, "http://testdomain.com/user/LisaRose");
+        result = m.getTopMatches();
         Assert.assertEquals(getExpectedResult(), result);
     }
 
     private Map<String, Double> getExpectedResult() {
         Map<String, Double> expected = new HashMap<String, Double>();
-        expected.put("http://www.testdomain.com/LisaRose", 0.99124070716192991);
-        expected.put("http://www.testdomain.com/MickLaSalle", 0.92447345164190486);
-        expected.put("http://www.testdomain.com/ClaudiaPuig", 0.89340514744156474);
+        expected.put("http://testdomain.com/user/LisaRose", 0.99124070716192991);
+        expected.put("http://testdomain.com/user/MickLaSalle", 0.92447345164190486);
+        expected.put("http://testdomain.com/user/ClaudiaPuig", 0.89340514744156474);
         return expected;
     }
 }
