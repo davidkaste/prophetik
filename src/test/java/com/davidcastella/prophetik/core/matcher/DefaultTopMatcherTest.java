@@ -1,6 +1,5 @@
 package com.davidcastella.prophetik.core.matcher;
 
-import com.davidcastella.prophetik.core.utils.Querier;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -38,7 +37,6 @@ public class DefaultTopMatcherTest {
     @Test
     public void testGetTopMatches() throws Exception {
         Map<String, Double> result = m.getTopMatches();
-        result = m.getTopMatches();
         Assert.assertEquals(getExpectedResult(), result);
     }
 
