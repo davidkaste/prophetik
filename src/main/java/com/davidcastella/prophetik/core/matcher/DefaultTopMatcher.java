@@ -4,10 +4,8 @@ import com.davidcastella.prophetik.core.userdistance.PearsonCorrelation;
 import com.davidcastella.prophetik.core.userdistance.UserDistance;
 import com.davidcastella.prophetik.core.utils.Querier;
 import com.hp.hpl.jena.rdf.model.Model;
-import com.sun.deploy.util.OrderedHashSet;
 
 import java.util.*;
-import java.util.Map.Entry;
 
 /**
  * Created by David Castellà on 14/06/2015.
