@@ -39,4 +39,13 @@ public class PearsonCorrelationTest {
         Double result = pearson.getUserDistance(graphTest, lisa, gene);
         assertEquals(df.format(expected), df.format(result));
     }
+
+    @Test
+    public void testNoSimilarityBetweenUsers() throws Exception {
+        String lisa = "http://testdomain.com/user/LisaRose";
+        String nobody = "http://testdomain.com/user/Nobody";
+        DecimalFormat df = new DecimalFormat("###0.0000");
+        Double result = pearson.getUserDistance(graphTest, lisa, nobody);
+        assertEquals(df.format(0.0), df.format(result));
+    }
 }
