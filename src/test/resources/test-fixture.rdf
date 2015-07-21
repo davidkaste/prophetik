@@ -492,4 +492,21 @@
         <schema:author rdf:resource="http://testdomain.com/user/Toby"/>
     </rdf:Description>
 
+    <rdf:Description rdf:about="http://testdomain.com/user/Nobody">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Nobody</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/rating/f8d8a35f576a9dd2e8383ecbb6b520e9">
+        <rdf:type rdf:resource="http://schema.org/Rating"/>
+        <schema:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</schema:ratingValue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://testdomain.com/review/f8d8a35f576a9dd2e8383ecbb6b520e9">
+        <rdf:type rdf:resource="http://schema.org/Review"/>
+        <schema:reviewRating rdf:resource="http://testdomain.com/rating/f8d8a35f576a9dd2e8383ecbb6b520e9"/>
+        <schema:itemReviewed rdf:resource="http://testdomain.com/movie/Batman"/>
+        <schema:author rdf:resource="http://testdomain.com/user/Nobody"/>
+    </rdf:Description>
+
 </rdf:RDF>
