@@ -4,7 +4,7 @@
 
     <groupId>com.davidcastella</groupId>
     <artifactId>prophetik</artifactId>
-    <version>0.1-PRE-ALPHA</version>
+    <version>0.1-BETA</version>
     <packaging>jar</packaging>
 
     <name>prophetik</name>
