@@ -37,9 +37,9 @@ public class Querier {
         return result;
     }
 
-    public static List<String> getAllUsers(Model graph, String userResource) {
+    public static List<String> getAllUsers(Model graph, String userResource, String userClassUri) {
         List<String> result = new ArrayList<String>();
-        Query q = QueryFactory.create(Queries.getAllUsers(userResource));
+        Query q = QueryFactory.create(Queries.getAllUsers(userResource, userClassUri));
         QueryExecution qe = QueryExecutionFactory.create(q, graph);
         ResultSet rs = qe.execSelect();
         QuerySolution qs;

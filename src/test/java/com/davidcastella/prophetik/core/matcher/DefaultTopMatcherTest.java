@@ -27,7 +27,7 @@ public class DefaultTopMatcherTest {
         graphTest = auxGraph.read(new InputStreamReader(
                         new FileInputStream(getClass().getClassLoader().getResource("test-fixture.rdf").getPath())),
                 "RDF/XML-ABBREV");
-        m = new DefaultTopMatcher(graphTest, "http://testdomain.com/user/Toby", 3);
+        m = new DefaultTopMatcher(graphTest, "http://testdomain.com/user/Toby", "http://schema.org/Person", 3);
     }
 
     @After

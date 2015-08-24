@@ -11,14 +11,14 @@ import java.util.*;
  */
 public class DefaultRecommenderEngine implements RecommenderEngine {
 
-    public Map<String, Double> getRecommendations(Model graph, String userResource, UserDistance simMethod) {
+    public Map<String, Double> getRecommendations(Model graph, String userResource, String userClassUri, UserDistance simMethod) {
         Map<String, Double> totals = new HashMap<String, Double>();
         Map<String, Double> simSums = new HashMap<String, Double>();
         Map<String, Double> user1Ratings, user2Ratings;
         Map<Double, String> rankings = new HashMap<Double, String>();
         Map<String, Double> rankReturn = new HashMap<String, Double>();
 
-        List<String> userList = Querier.getAllUsers(graph, userResource);
+        List<String> userList = Querier.getAllUsers(graph, userResource, userClassUri);
         List<Double> rankingsIndex = null;
 
         Double sim;

@@ -9,5 +9,5 @@ import java.util.Map;
  * Created by davidkaste on 21/7/15.
  */
 public interface RecommenderEngine {
-    public Map<String, Double> getRecommendations(Model graph, String userResource, UserDistance method);
+    public Map<String, Double> getRecommendations(Model graph, String userResource, String userClassUri, UserDistance method);
 }

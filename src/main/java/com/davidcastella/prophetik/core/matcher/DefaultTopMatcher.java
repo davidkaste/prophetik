@@ -15,28 +15,30 @@ public class DefaultTopMatcher implements TopMatcher {
     private String userResourceUri;
     private int numberResults;
     private UserDistance distanceMethod;
+    private String userClassUri;
 
-    public DefaultTopMatcher(Model graph, String userResourceUri, int numberResults, UserDistance distanceMethod) {
+    public DefaultTopMatcher(Model graph, String userResourceUri, String userClassUri, int numberResults, UserDistance distanceMethod) {
         this.graph = graph;
         this.userResourceUri = userResourceUri;
         this.numberResults = numberResults;
         this.distanceMethod = distanceMethod;
+        this.userClassUri = userClassUri;
     }
 
-    public DefaultTopMatcher(Model graph, String userResourceUri) {
-        this(graph, userResourceUri, 5, new PearsonCorrelation());
+    public DefaultTopMatcher(Model graph, String userResourceUri, String userClassUri) {
+        this(graph, userResourceUri, userClassUri, 5, new PearsonCorrelation());
     }
 
-    public DefaultTopMatcher(Model graph, String userResourceUri, int numberResults) {
-        this(graph, userResourceUri, numberResults, new PearsonCorrelation());
+    public DefaultTopMatcher(Model graph, String userResourceUri, String userClassUri, int numberResults) {
+        this(graph, userResourceUri, userClassUri, numberResults, new PearsonCorrelation());
     }
 
-    public DefaultTopMatcher(Model graph, String userResourceUri, UserDistance distanceMethod) {
-        this(graph, userResourceUri, 5, distanceMethod);
+    public DefaultTopMatcher(Model graph, String userResourceUri, String userClassUri, UserDistance distanceMethod) {
+        this(graph, userResourceUri, userClassUri, 5, distanceMethod);
     }
 
     public Map<String, Double> getTopMatches() {
-        List<String> allUsers = Querier.getAllUsers(graph, userResourceUri);
+        List<String> allUsers = Querier.getAllUsers(graph, userResourceUri, userClassUri);
         Map<Double, String> similarity = new HashMap<Double, String>();
         List<Double> similarityIndex = new ArrayList<Double>();
         Double value;

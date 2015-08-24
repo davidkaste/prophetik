@@ -39,7 +39,7 @@ public class DefaultRecommenderEngineTest {
 
     @Test
     public void testGetRecommendations() throws Exception {
-        Map<String, Double> recs = re.getRecommendations(graphTest, "http://testdomain.com/user/Toby", new PearsonCorrelation());
+        Map<String, Double> recs = re.getRecommendations(graphTest, "http://testdomain.com/user/Toby", "http://schema.org/Person", new PearsonCorrelation());
         assertEquals(getExpected(), recs);
     }
 
