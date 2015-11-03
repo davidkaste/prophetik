@@ -16,7 +16,6 @@ public class DefaultRecommenderEngine implements RecommenderEngine {
         Map<String, Double> simSums = new HashMap<String, Double>();
         Map<String, Double> user1Ratings, user2Ratings;
         Map<Double, String> rankings = new HashMap<Double, String>();
-        Map<String, Double> rankReturn = new HashMap<String, Double>();
 
         List<String> userList = Querier.getAllUsers(graph, userResource, userClassUri);
         List<Double> rankingsIndex = null;
@@ -45,24 +44,32 @@ public class DefaultRecommenderEngine implements RecommenderEngine {
             }
         }
 
+        return generateRecommendation(totals, simSums, rankings);
+    }
+
+    private Map<String, Double> generateRecommendation(Map<String, Double> totals, Map<String, Double> simSums, Map<Double, String> rankings) {
+        Map<String, Double> rankReturn = new HashMap<String, Double>();
+        List<Double> rankingsIndex;
+        
         Double rank = 0.0;
         Double totalsValue = 0.0;
         Double simSumsValue = 0.0;
+        
         for(String key : totals.keySet()) {
             totalsValue = totals.get(key);
             simSumsValue = simSums.get(key);
             rank = totalsValue / simSumsValue;
             rankings.put(rank, key);
         }
-
+        
         rankingsIndex = new ArrayList<Double>(rankings.keySet());
         Collections.sort(rankingsIndex);
         Collections.reverse(rankingsIndex);
-
+        
         for(Double key : rankingsIndex) {
             rankReturn.put(rankings.get(key), key);
         }
-
+        
         return rankReturn;
     }
 }
